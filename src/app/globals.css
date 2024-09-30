@@ -4,12 +4,30 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  /* --foreground: #171717; */
 }
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -10;
+  background: #013a6b;
+  transform: skew(-63.3deg);
+  transform-origin:top;
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #004e95;
     --foreground: #ededed;
   }
 }
